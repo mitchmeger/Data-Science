@@ -49,8 +49,28 @@ arr8 = np.random.randn(3,3,3)#randn returns floats when it is a variable
 print(arr7, arr8)
 
 
+plist = [1,2,3,4,5]
+arr9 = np.array(plist)
+print(plist, type(plist),arr9, type(arr9)) ##Convert python list to numpy array
+
+arr10 = np.array([1,2,3,4,5], dtype=np.int64)
+
+arr11 = np.copy(arr10) #Copy array with different ID 
+
+print(arr10, id(arr10), arr11, id(arr11)) 
 
 
+arr12 = np.arange(1,11)
+print(arr12)
+
+arr13 = np.arange(1,11, 2, dtype=np.int64) ##Array 1-10 inputing every 2
+print(arr13)
+
+arr14 = np.arange(1,11, dtype=np.int64)[::-1] #[start:end:step (-) inverse order]
+print (arr14)
+
+arr15 = np.arange(9).reshape(3,3) #Making array 0-8 and reshaping it to a 3x3
+print(arr15)
 
 
 
