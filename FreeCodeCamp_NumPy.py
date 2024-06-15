@@ -181,6 +181,29 @@ print(arr32[mask])
 
 ##Logic funtions 
 
+print(arr32.all())#.all returns true if none of the elements are zero and since we have a zero it returns false 
+
+print(arr32.any()) #>all returns true if there are zeros in the array 
+
+##Statistics 
+arr33 = np.array([3, 5, 6, 7, 2, 3, 4, 9, 4])
+
+print(arr33.sum()) #Suming up all elements in array 33
+
+arr34 = X = np.array([1, 2, 0, 4, 5, 6, 0, 0, 9, 10])
+
+print(arr34.mean())##Getting mean from array 
+
+arr35 = np.arange(1,17).reshape(4,4)
+print(arr35.sum(axis=0)) ##Axis = 0 is columns and axis = 1. so here I am summing all columns
+
+print(arr35.mean(axis=1))
+
+arr36 = np.array([1, 2, 0, 4, 5, 6, 0, 0, 9, 10])
+print(arr36.max())
+
+
+
 
 
 
