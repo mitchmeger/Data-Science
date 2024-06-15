@@ -72,5 +72,26 @@ print (arr14)
 arr15 = np.arange(9).reshape(3,3) #Making array 0-8 and reshaping it to a 3x3
 print(arr15)
 
+#show memory 
+
+arr16 = np.zeros([10,10])
+print("%d bytes" % (arr16.size * arr16.itemsize)) #Getting memory of array 
+
+###Array indexing 
+
+arr17 = np.arange(10)
+print(arr17)
+print(arr17[0]) #First element 
+
+print(arr17[-1]) #Last element
+
+print(arr17[0:3]) #First 3 elements 
+
+print(arr17[1:-1]) #Middle elements 
+
+arr18 = arr17[:][::-1]
+print(arr18) #Array in reverse order
+
+
 
 
