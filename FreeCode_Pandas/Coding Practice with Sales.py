@@ -154,6 +154,8 @@ print(sales.loc[mj].shape[0])
 profit_2016 = sales.loc[sales['Year'] == 2016, ['Profit', 'Month']] #looking at rows profit and month in the year 2016
 
 
+filt = (sales['Country'] == 'United States', 'Unit_Price')
 
+print(sales.loc[filt])
 print(sales.loc[sales['Country'] == 'United States', 'Unit_Price'])
 

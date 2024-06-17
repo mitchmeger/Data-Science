@@ -195,7 +195,7 @@ arr34 = X = np.array([1, 2, 0, 4, 5, 6, 0, 0, 9, 10])
 print(arr34.mean())##Getting mean from array 
 
 arr35 = np.arange(1,17).reshape(4,4)
-print(arr35.sum(axis=0)) ##Axis = 0 is columns and axis = 1. so here I am summing all columns
+print(arr35.sum(axis=0)) ##axis = 0 is columns and axis = 1. so here I am summing all columns
 
 print(arr35.mean(axis=1))
 
