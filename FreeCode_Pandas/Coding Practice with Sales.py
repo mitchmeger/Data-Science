@@ -155,7 +155,12 @@ profit_2016 = sales.loc[sales['Year'] == 2016, ['Profit', 'Month']] #looking at 
 
 
 filt = (sales['Country'] == 'United States', 'Unit_Price')
-
 print(sales.loc[filt])
 print(sales.loc[sales['Country'] == 'United States', 'Unit_Price'])
 
+
+certificates_earned = pd.Series(
+    [8,2,5,6],
+    index = ['Tom','Kris','Ahmad','Beau']
+)
+print(certificates_earned)
