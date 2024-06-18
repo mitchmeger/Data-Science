@@ -17,5 +17,9 @@ certificates_earned1 = pd.DataFrame({
  
 
 })
-certificates_earned1.index = ['Tom','Kris', 'Ahmad', 'Beau']
-print(certificates_earned1.iloc[2])
+names = ['Tom','Kris', 'Ahmad', 'Beau']
+certificates_earned1.index = names
+longest_streak = pd.Series([13,11,9,7], index = names)
+
+certificates_earned1['longest_streak'] = longest_streak
+print(certificates_earned1)
