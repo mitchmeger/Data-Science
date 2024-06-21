@@ -31,3 +31,8 @@ print(certificates_earned1)
 cond = round((certificates_earned1["Certificates"])/(certificates_earned1['longest_streak']),2) # certificates/ longest streak
 certificates_earned1["Cert per Streak"]= cond 
 print(certificates_earned1)
+
+s = pd.Series([np.nan,1,2,np.nan,3])
+s = s.fillna(method = 'ffill')
+
+print(s)
